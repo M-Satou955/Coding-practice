@@ -39,4 +39,9 @@ emails[i] は小文字の英字、'+'、'.'、および '@' で構成されて�
 ```python
 class Solution:
     def numUniqueEmails(self, emails: List[str]) -> int:
+
 ```
+
+考え方 +がある場合は@前の数字はすべて無視
+
++がある場合は@のあと → ドメイン名のみを比較（一度出てきたドメイン名を辞書に格納しておく？） +がある場合は全文を比較する
